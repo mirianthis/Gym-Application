@@ -1,0 +1,267 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="258dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="76dp"
+        android:text="Add Workout Program"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/exerciseContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        tools:layout_editor_absoluteX="16dp">
+
+        <!-- Add multiple exercise/muscle group spinner pairs as needed -->
+        <LinearLayout
+            android:id="@+id/Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/muscleGroupSpinner1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_muscle_group" />
+
+            <Spinner
+                android:id="@+id/exerciseSpinner1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_exercise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/muscleGroupSpinner2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_muscle_group" />
+
+            <Spinner
+                android:id="@+id/exerciseSpinner2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_exercise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/muscleGroupSpinner3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_muscle_group" />
+
+            <Spinner
+                android:id="@+id/exerciseSpinner3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_exercise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/muscleGroupSpinner4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_muscle_group" />
+
+            <Spinner
+                android:id="@+id/exerciseSpinner4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_exercise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/muscleGroupSpinner5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_muscle_group" />
+
+            <Spinner
+                android:id="@+id/exerciseSpinner5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_exercise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/muscleGroupSpinner6"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_muscle_group" />
+
+            <Spinner
+                android:id="@+id/exerciseSpinner6"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_exercise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/muscleGroupSpinner7"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_muscle_group" />
+
+            <Spinner
+                android:id="@+id/exerciseSpinner7"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_exercise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/muscleGroupSpinner8"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_muscle_group" />
+
+            <Spinner
+                android:id="@+id/exerciseSpinner8"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:prompt="@string/select_exercise" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addExerciseButton"
+        android:layout_width="168sp"
+        android:layout_height="45sp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:background="@drawable/buttonbackground"
+        android:text="Add Exercise"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exerciseContainer" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="38dp"
+        android:hint="Workout Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/exerciseContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:text="Muscle Group"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/exerciseContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:text="Excercise"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/exerciseContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

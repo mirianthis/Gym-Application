@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_titles">
+        <item>Recommended Workouts</item>
+        <item>Your Workouts</item>
+        <item>Add Workout</item>
+    </string-array>
+
+</resources>

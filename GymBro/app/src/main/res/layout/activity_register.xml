@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageHeader"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/header"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/header_layer"
+        app:layout_constraintBottom_toBottomOf="@id/imageHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageHeader"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/workout_time"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/viewSupporter"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageHeader"
+        android:layout_marginBottom="30dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/login_background"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSupporter"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/textRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:hint="Email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:paddingStart="60dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/textRegister"
+            tools:ignore="Autofill" />
+
+        <View
+            android:id="@+id/viewDividerForEmail"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorTextHint"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_email"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextEmail"
+            app:layout_constraintStart_toStartOf="@id/editTextEmail"
+            app:tint="@color/colorTextHint" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:hint="@string/Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingStart="60dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/viewDividerForEmail"
+            tools:ignore="Autofill" />
+
+        <View
+            android:id="@+id/viewDividerForPassword"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorTextHint"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_lock"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextPassword"
+            app:layout_constraintStart_toStartOf="@id/editTextPassword"
+            app:tint="@color/colorTextHint" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:hint="@string/username"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:paddingStart="60dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/viewDividerForPassword"
+            tools:ignore="Autofill" />
+
+        <View
+            android:id="@+id/viewDividerForUsername"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorTextHint"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_person"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextUsername"
+            app:layout_constraintStart_toStartOf="@id/editTextUsername"
+            app:tint="@color/colorTextHint" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/primary_button_background"
+            android:text="@string/resigster"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/viewDividerForUsername" />
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="utilities.BodyFatCalculatorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/centerhorizontaline" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/centerverticalline" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/malefemalenotfucus"
+        android:layout_below="@id/resultslayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="23dp"
+        android:id="@+id/female">
+
+        <ImageView
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_marginTop="10dp"
+            android:layout_above="@+id/textfemale"
+            android:src="@drawable/female"
+            android:layout_centerInParent="true">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/textfemale"
+            android:text="Female"
+            android:fontFamily="@font/raleway"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/malefemalenotfucus"
+        android:layout_below="@id/resultslayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/male">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_above="@+id/textmale"
+            android:layout_centerInParent="true"
+            android:src="@drawable/male">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/textmale"
+            android:text="Male"
+            android:fontFamily="@font/raleway"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cardbackground"
+        android:id="@+id/resultslayout">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:src="@drawable/ic_back"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tint="@color/text_or_icon"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="130dp"
+            android:textSize="80sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            android:id="@+id/tvresults"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/male"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cardbackground"
+        android:id="@+id/heightlayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Height(cm)"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:id="@+id/heighttext"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-130dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/heighttext"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/currentheight">
+
+        </TextView>
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:progressTint="#FF4c4c"
+            android:layout_marginRight="10dp"
+            android:max="300"
+            android:id="@+id/seekbarforheight">
+
+        </SeekBar>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/heightlayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cardbackground"
+        android:id="@+id/weightlayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Weight(kg)"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:id="@+id/weightttext"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-130dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/weightttext"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/currentweight">
+
+        </TextView>
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:progressTint="#FF4c4c"
+            android:layout_marginRight="10dp"
+            android:max="200"
+            android:id="@+id/seekbarforweight">
+
+        </SeekBar>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/weightlayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cardbackground"
+        android:id="@+id/waistlayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Waist(cm)"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:id="@+id/waistttext"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-130dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/waistttext"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/currentwaist">
+
+        </TextView>
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:progressTint="#FF4c4c"
+            android:layout_marginRight="10dp"
+            android:max="200"
+            android:id="@+id/seekbarforwaist">
+
+        </SeekBar>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/waistlayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cardbackground"
+        android:id="@+id/hiplayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Hip(cm)"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:id="@+id/hiptext"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-130dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/hiptext"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/currenthip">
+
+        </TextView>
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:progressTint="#FF4c4c"
+            android:layout_marginRight="10dp"
+            android:max="200"
+            android:id="@+id/seekbarforhip">
+
+        </SeekBar>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/hiplayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cardbackground"
+        android:id="@+id/necklayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Neck(cm)"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:id="@+id/necktext"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-130dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/necktext"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/currentneck">
+
+        </TextView>
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:progressTint="#FF4c4c"
+            android:layout_marginRight="10dp"
+            android:max="200"
+            android:id="@+id/seekbarforneck">
+
+        </SeekBar>
+
+
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/calculatebodyfat"
+        android:layout_alignParentBottom="true"
+        android:textSize="15sp"
+        android:layout_marginBottom="25dp"
+        android:text="Calculate Your Body Fat"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonbackground"
+        android:textStyle="bold"
+        >
+
+    </android.widget.Button>
+
+
+
+</RelativeLayout>

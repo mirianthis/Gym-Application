@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GymBro"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name="utilities.BMI_Results"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCnAmVQtUkkd4hV-sIYRmg2QGhn-hm5h18" />
+
+        <activity
+            android:name="maps.ClothingMapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_clothing_maps" />
+        <activity
+            android:name=".ExerciseListAdapter"
+            android:exported="false" />
+        <activity
+            android:name="workout.WorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name="maps.MapsActivity"
+            android:exported="false"
+            android:label="@string/Maps" />
+        <activity
+            android:name="maps.SupplementMapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_supplements_maps" />
+        <activity
+            android:name="utilities.BodyFatCalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name="utilities.OneRepMaxCalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name="utilities.UtilitiesActivity"
+            android:exported="false"
+            android:label="@string/Utilities" />
+        <activity
+            android:name="utilities.BMICalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name="home.HomeActivity"
+            android:exported="false"
+            android:label="@string/Home" />
+        <activity
+            android:name="home.InfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="Register" />
+        <activity
+            android:name=".SplashscreenActivity"
+            android:exported="true"
+            android:label="Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="exercise_library.LevelSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name="exercise_library.ResultsActivity"
+            android:exported="false" />
+        <activity
+            android:name="exercise_library.Exercises"
+            android:exported="false"
+            android:label="@string/Exercises" />
+        <activity
+            android:name="utilities.TimerActivity"
+            android:exported="false" />
+        <activity
+            android:name="maps.GymMapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_gym_maps" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
