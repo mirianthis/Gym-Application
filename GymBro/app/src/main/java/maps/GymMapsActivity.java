@@ -82,7 +82,7 @@ public class GymMapsActivity extends FragmentActivity implements OnMapReadyCallb
                                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15));
 
                                 // Set up Places API
-                                Places.initialize(getApplicationContext(), "AIzaSyCnAmVQtUkkd4hV-sIYRmg2QGhn-hm5h18");
+                                Places.initialize(getApplicationContext(), "Google Maps Key");
                                 PlacesClient placesClient = Places.createClient(GymMapsActivity.this);
 
                                 // Search for nearby gyms
