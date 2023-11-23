@@ -81,7 +81,7 @@ public class SupplementMapsActivity extends FragmentActivity implements OnMapRea
                                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15));
 
                                 // Set up Places API
-                                Places.initialize(getApplicationContext(), "AIzaSyCnAmVQtUkkd4hV-sIYRmg2QGhn-hm5h18");
+                                Places.initialize(getApplicationContext(), "Google Api Key");
                                 PlacesClient placesClient = Places.createClient(SupplementMapsActivity.this);
 
                                 // Search for nearby supplement stores
