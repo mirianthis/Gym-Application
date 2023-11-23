@@ -94,7 +94,7 @@ public class ClothingMapsActivity extends FragmentActivity implements OnMapReady
                                         "?location=" + mlocation +
                                         "&radius=" + radius +
                                         "&type=" + placeType +
-                                        "&key=" + "AIzaSyCnAmVQtUkkd4hV-sIYRmg2QGhn-hm5h18";
+                                        "&key=" + "Google Api Key";
 
                                 // Send the request to the Places API
                                 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
