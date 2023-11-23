@@ -28,7 +28,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCnAmVQtUkkd4hV-sIYRmg2QGhn-hm5h18" />
+            android:value="Google Api Key" />
 
         <activity
             android:name="maps.ClothingMapsActivity"
